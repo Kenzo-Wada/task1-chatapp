@@ -10,7 +10,7 @@ export default class Logs extends Component {
             <div>
                 <ul>
                     {this.props.logs.map((log, i) => {
-                        return <li key={i}>{log}</li>
+                        return <span key={i}>{log}<br/></span>
                     })}
                 </ul>
             </div>

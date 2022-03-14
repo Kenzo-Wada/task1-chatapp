@@ -22,7 +22,7 @@ export default class App extends React.Component {
   }
 
   onConnect = () => {
-    this.state.logs.push("onConnect.")
+    //this.state.logs.push("onConnect.")
     this.setState({ logs: this.state.logs})
   };
 
@@ -39,10 +39,10 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Go×React Chatサンプル</h1>
-       <SendForm socket={this.socket} />
-       <div id="log"></div>
-       <Logs logs={this.state.logs} />
+        <h2>Week1 ChatTool</h2>
+        <Logs logs={this.state.logs} />
+        <div id="log"></div>
+        <SendForm socket={this.socket} />
       </div>
     );
   }
