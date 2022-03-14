@@ -3,11 +3,13 @@
 
 ## start guide
 
+### server
 ``` shell
-git clone https://github.com/foresukecom/go-react-chat.git
-cd go-react-chat/backend
 go run *.go &
-cd ../frontend
+``` 
+
+### client
+``` shell
 yarn
 yarn start
 ```
