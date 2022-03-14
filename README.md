@@ -1,5 +1,5 @@
 # Task1 Chat app
-*開発課題第一週
+*　Every week develop challenge: week1
 
 ## start guide
 
