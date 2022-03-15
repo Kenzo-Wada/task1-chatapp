@@ -1,15 +1,15 @@
-# go-react-chat
+# Task1 Chat app
+- Every week develop challenge: week1
 
-Simple chat using Go and React.  
-See the [blog](https://foresuke.com/post/go_react_websocket/) for details.  
+## start guide
 
-## Quick Start
-
+### server
 ``` shell
-git clone https://github.com/foresukecom/go-react-chat.git
-cd go-react-chat/backend
 go run *.go &
-cd ../frontend
+``` 
+
+### client
+``` shell
 yarn
 yarn start
 ```
