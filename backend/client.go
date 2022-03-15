@@ -24,11 +24,9 @@ var (
 var upgrader = websocket.Upgrader{
 	ReadBufferSize:  1024,
 	WriteBufferSize: 1024,
-	// Cross-Originのチェックを無効にしてる。セキュリティ的にはよろしくないので注意。
-	// https://godoc.org/github.com/gorilla/websocket#hdr-Origin_Considerations
 	CheckOrigin: func(r *http.Request) bool {
-        return true
-    },
+		return true
+	},
 }
 
 type Client struct {
