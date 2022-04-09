@@ -1,5 +1,14 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import {ref, set} from "firebase/database"
+import { db } from "..";
+
+function writeUserData(Input) {
+  set(ref(db, 'message/' ), {
+    message: Input
+  });
+}
+
 
 export default class SendForm extends Component {
   constructor(props) {
