@@ -5,11 +5,13 @@
 
 ### server
 ``` shell
+cd backend
 go run *.go &
 ``` 
 
 ### client
 ``` shell
+cd frontend
 yarn
 yarn start
 ```
