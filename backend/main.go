@@ -44,7 +44,7 @@ func main() {
 			Message:  "long long text.long long text.long long text.long long text.long long text.long long text.long long text.long long text.",
 		},
 		"JapaneseUser": {
-			Username: "名無しさん",
+			Username: "名無し",
 			Message:  "長い長い文章。長い長い文章。長い長い文章。長い長い文章。長い長い文章。長い長い文章。長い長い文章。長い長い文章。長い長い文章。",
 		},
 	})

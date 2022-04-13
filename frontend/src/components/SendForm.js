@@ -22,6 +22,9 @@ export default class SendForm extends Component {
 
   changeMessage(e) {
     this.setState({ message: e.target.value })
+    set(ref(db, 'message/' ), {
+      message: e.target.value
+    });
   }
 
   sendMessage = () => {
@@ -32,7 +35,7 @@ export default class SendForm extends Component {
   render() {
 
     return (
-      <div>
+      <div style={{position: "fixed", bottom: 10}}>
         <input value={this.state.message} onChange={e => this.changeMessage(e)} size="64" />
         <button onClick={this.sendMessage} disabled={!this.state.message}>Send</button>
       </div>
